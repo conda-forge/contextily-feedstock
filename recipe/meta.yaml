@@ -5,12 +5,12 @@ package:
   version: {{ version }}
 
 source:
-  fn: contextily-{{ version }}.tar.gz
   url: https://pypi.io/packages/source/c/contextily/contextily-{{ version }}.tar.gz
   sha256: 68caa2747374a7b42aba98f3030720673ba045313ad7382b1ea9ad451d0a7873
 
 build:
   number: 0
+  noarch: python
   script: python setup.py install --single-version-externally-managed --record record.txt
 
 requirements:
