@@ -1,4 +1,4 @@
-{% set version = "0.9.2" %}
+{% set version = "0.99.0" %}
 
 package:
   name: contextily
@@ -6,7 +6,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/c/contextily/contextily-{{ version }}.tar.gz
-  sha256: 3834eb3f11f9e5c7a0a975a7206b84d1cdac5066c9d157d89dba50b8ca8719cb
+  sha256: 68caa2747374a7b42aba98f3030720673ba045313ad7382b1ea9ad451d0a7873
 
 build:
   number: 0
@@ -20,6 +20,7 @@ requirements:
   run:
     - python
     - cartopy
+    - geopy
     - pandas
     - pillow
     - rasterio
