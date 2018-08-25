@@ -1,4 +1,4 @@
-{% set version = "0.99.0" %}
+{% set version = "1.0rc1" %}
 
 package:
   name: contextily
@@ -6,26 +6,26 @@ package:
 
 source:
   url: https://pypi.io/packages/source/c/contextily/contextily-{{ version }}.tar.gz
-  sha256: 68caa2747374a7b42aba98f3030720673ba045313ad7382b1ea9ad451d0a7873
+  sha256: 1f0895a59b01b421e069c600fcfa6f4edf567509ec667210981b61e61195270a
 
 build:
   number: 0
   noarch: python
-  script: python setup.py install --single-version-externally-managed --record record.txt
+  script: "{{ PYTHON }} -m pip install . --no-deps --ignore-installed --no-cache-dir -vvv"
 
 requirements:
   build:
-    - python
-    - setuptools
+    - python >=3.5
+    - pip
   run:
-    - python
+    - python >=3.5
     - cartopy
     - geopy
+    - mercantile
     - pandas
     - pillow
     - rasterio
-    - six
-    - mercantile
+    - requests
 
 test:
   imports:
@@ -35,7 +35,7 @@ about:
   home: https://github.com/darribas/contextily
   license: BSD 3-Clause
   license_file: LICENSE.txt
-  summary: 'Context geo-tiles in Python.'
+  summary: 'Context geo-tiles in Python'
   license_family: BSD
 
 extra:
