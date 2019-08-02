@@ -1,4 +1,4 @@
-{% set version = "0.99.0" %}
+{% set version = "1.0rc2" %}
 
 package:
   name: contextily
@@ -6,7 +6,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/c/contextily/contextily-{{ version }}.tar.gz
-  sha256: 68caa2747374a7b42aba98f3030720673ba045313ad7382b1ea9ad451d0a7873
+  sha256: 338f5669110b06134afa60c536fef9bb880d683dd8931d5ff9ef7cfaf3ca2952
 
 build:
   number: 0
@@ -19,13 +19,14 @@ requirements:
     - setuptools
   run:
     - python
-    - cartopy
     - geopy
+    - matplotlib
+    - mercantile
     - pandas
     - pillow
     - rasterio
+    - requests
     - six
-    - mercantile
 
 test:
   imports:
