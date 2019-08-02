@@ -11,12 +11,12 @@ source:
 build:
   number: 0
   noarch: python
-  script: python setup.py install --single-version-externally-managed --record record.txt
+  script: "{{ PYTHON }} -m pip install . --no-deps --ignore-installed --no-cache-dir -vvv"
 
 requirements:
   build:
-    - python
-    - setuptools
+    - python >=3.5
+    - pip
   run:
     - python
     - geopy
@@ -36,7 +36,7 @@ about:
   home: https://github.com/darribas/contextily
   license: BSD 3-Clause
   license_file: LICENSE.txt
-  summary: 'Context geo-tiles in Python.'
+  summary: 'Context geo-tiles in Python'
   license_family: BSD
 
 extra:
