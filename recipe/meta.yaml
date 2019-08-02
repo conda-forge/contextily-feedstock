@@ -22,11 +22,9 @@ requirements:
     - geopy
     - matplotlib
     - mercantile
-    - pandas
     - pillow
     - rasterio
     - requests
-    - six
 
 test:
   imports:
