@@ -9,7 +9,7 @@ source:
   sha256: 338f5669110b06134afa60c536fef9bb880d683dd8931d5ff9ef7cfaf3ca2952
 
 build:
-  number: 0
+  number: 1
   noarch: python
   script: "{{ PYTHON }} -m pip install . --no-deps --ignore-installed --no-cache-dir -vvv"
 
@@ -21,7 +21,7 @@ requirements:
     - python >=3.5
     - geopy
     - joblib
-    - matplotlib
+    - matplotlib-base
     - mercantile
     - pillow
     - rasterio
