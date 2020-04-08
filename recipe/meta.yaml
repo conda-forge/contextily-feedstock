@@ -32,7 +32,7 @@ test:
     - contextily
 
 about:
-  home: https://github.com/darribas/contextily
+  home: https://github.com/geopandas/contextily
   license: BSD 3-Clause
   license_file: LICENSE.txt
   summary: 'Context geo-tiles in Python'
@@ -43,3 +43,4 @@ extra:
     - darribas
     - ocefpaf
     - jorisvandenbossche
+    - ljwolf
