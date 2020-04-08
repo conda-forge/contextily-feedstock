@@ -33,7 +33,7 @@ test:
 
 about:
   home: https://github.com/geopandas/contextily
-  license: BSD 3-Clause
+  license: BSD-3-Clause
   license_file: LICENSE.txt
   summary: 'Context geo-tiles in Python'
   license_family: BSD
