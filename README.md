@@ -1,9 +1,9 @@
 About contextily
 ================
 
-Home: https://github.com/darribas/contextily
+Home: https://github.com/geopandas/contextily
 
-Package license: BSD 3-Clause
+Package license: BSD-3-Clause
 
 Feedstock license: BSD 3-Clause
 
@@ -118,5 +118,6 @@ Feedstock Maintainers
 
 * [@darribas](https://github.com/darribas/)
 * [@jorisvandenbossche](https://github.com/jorisvandenbossche/)
+* [@ljwolf](https://github.com/ljwolf/)
 * [@ocefpaf](https://github.com/ocefpaf/)
 
