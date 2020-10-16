@@ -1,4 +1,4 @@
-{% set version = "1.0.0" %}
+{% set version = "1.0.1" %}
 
 package:
   name: contextily
@@ -6,7 +6,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/c/contextily/contextily-{{ version }}.tar.gz
-  sha256: 1f2d051160a561617d7ce550bafa484945c1c1124582dbe348cfd7029a8dd430
+  sha256: f7dc25dbc8e01163be6cdeedb49a56da9cd0d586c838861f442ef2ee45eba9d4
 
 build:
   number: 0
