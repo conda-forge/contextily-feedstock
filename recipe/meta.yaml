@@ -1,4 +1,4 @@
-{% set version = "1.1.0" %}
+{% set version = "1.2.0" %}
 
 package:
   name: contextily
@@ -6,19 +6,19 @@ package:
 
 source:
   url: https://pypi.io/packages/source/c/contextily/contextily-{{ version }}.tar.gz
-  sha256: 3324cba6f9e49c70e8841957d0d8907275cd0baf001b8d1feda4868c53a9557b
+  sha256: 234705b3f03dfa1fcb5fabe765a4a7f72be91dafe2a6e18df270be391ae355dd
 
 build:
   number: 0
   noarch: python
-  script: {{ PYTHON }} -m pip install . --no-deps --ignore-installed --no-cache-dir -vvv
+  script: {{ PYTHON }} -m pip install . -vv
 
 requirements:
   host:
-    - python >=3.5
+    - python >=3.6
     - pip
   run:
-    - python >=3.5
+    - python >=3.6
     - geopy
     - joblib
     - matplotlib-base
@@ -26,10 +26,15 @@ requirements:
     - pillow
     - rasterio
     - requests
+    - xyzservices
 
 test:
   imports:
     - contextily
+  commands:
+    - pip check
+  requires:
+    - pip
 
 about:
   home: https://github.com/geopandas/contextily
