@@ -11,14 +11,14 @@ source:
 build:
   number: 0
   noarch: python
-  script: {{ PYTHON }} -m pip install . --no-deps --ignore-installed --no-cache-dir -vvv
+  script: {{ PYTHON }} -m pip install . -vv
 
 requirements:
   host:
-    - python >=3.5
+    - python >=3.6
     - pip
   run:
-    - python >=3.5
+    - python >=3.6
     - geopy
     - joblib
     - matplotlib-base
@@ -26,10 +26,15 @@ requirements:
     - pillow
     - rasterio
     - requests
+    - xyzservices
 
 test:
   imports:
     - contextily
+  commands:
+    - pip check
+  requires:
+    - pip
 
 about:
   home: https://github.com/geopandas/contextily
