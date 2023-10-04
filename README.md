@@ -1,11 +1,11 @@
-About contextily
-================
+About contextily-feedstock
+==========================
+
+Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/contextily-feedstock/blob/main/LICENSE.txt)
 
 Home: https://github.com/geopandas/contextily
 
 Package license: BSD-3-Clause
-
-Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/contextily-feedstock/blob/main/LICENSE.txt)
 
 Summary: Context geo-tiles in Python
 
@@ -146,5 +146,6 @@ Feedstock Maintainers
 * [@darribas](https://github.com/darribas/)
 * [@jorisvandenbossche](https://github.com/jorisvandenbossche/)
 * [@ljwolf](https://github.com/ljwolf/)
+* [@martinfleis](https://github.com/martinfleis/)
 * [@ocefpaf](https://github.com/ocefpaf/)
 
