@@ -5,22 +5,22 @@ package:
   version: {{ version }}
 
 source:
-  url: https://pypi.io/packages/source/c/contextily/contextily-{{ version }}.tar.gz
+  url: https://pypi.org/packages/source/c/contextily/contextily-{{ version }}.tar.gz
   sha256: 3c747925269be248a9b1a761859e05d1681286e04d5d0796bdaf1de3409474bb
 
 build:
-  number: 0
+  number: 1
   noarch: python
   script: {{ PYTHON }} -m pip install . -vv
 
 requirements:
   host:
-    - python >=3.8
+    - python {{ python_min }}
     - pip
     - setuptools >=61.0
     - setuptools-scm >=6.2
   run:
-    - python >=3.8
+    - python >={{ python_min }}
     - geopy
     - joblib
     - matplotlib-base
@@ -37,6 +37,7 @@ test:
     - pip check
   requires:
     - pip
+    - python {{ python_min }}
 
 about:
   home: https://github.com/geopandas/contextily
